@@ -18,14 +18,15 @@ def recebe_valores():
     
     if calculo.operacao == "Adição":
         resultado = int(calculo.valor1) + int(calculo.valor2)
-    if calculo.operacao == "Subtração":
+    elif calculo.operacao == "Subtração":
         resultado = int(calculo.valor1) - int(calculo.valor2)
-    if calculo.operacao == "Multiplicação":
+    elif calculo.operacao == "Multiplicação":
         resultado = int(calculo.valor1) * int(calculo.valor2)
-    if calculo.operacao == "Divisão":
+    elif calculo.operacao == "Divisão":
         resultado = int(calculo.valor1) / int(calculo.valor2)
     else:
-        return "Operação incorreta"
+        return "Não é possível realizar a operação."
+    
     resposta = f"O resultado da {calculo.operacao} entre {calculo.valor1} e {calculo.valor2} é {resultado}."
     return resposta
 

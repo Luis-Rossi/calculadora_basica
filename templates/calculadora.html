@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-- Calculadora Simples --</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
     <form action="calculadora" method="POST">
         <input type="text" name="valor1" placeholder="Digite o Valor1">
         <input type="text" name="valor2" placeholder="Digite o Valor2">
-        <input type="text" name="operacao" placeholder="Adição, Subtração, Multiplicação ou Divisão?">
+
+        <select name="operacao">
+            <option>-- Selecione a operação --</option>
+            <option name="adicao">Adição</option>
+            <option name="subtracao">Subtração</option>
+            <option name="multiplicacao">Multiplicação</option>
+            <option name="divisao">Divisão</option>
+        </select>
+        
+        <!--<input type="text" name="operacao" placeholder="Adição, Subtração, Multiplicação ou Divisão?">-->
         <button type="submit">Calcular!</button>
     </form>
 </body>
